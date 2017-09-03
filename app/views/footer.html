@@ -1,5 +1,12 @@
-  {{if eq .RunMode "dev"}}
-    {{template "debug.html" .}}
+
+    <footer>
+      <p>&copy; Attend 2017</p>
+    </footer>
+  </div> <!-- /container -->
+
+
+  {{range .moreScripts}}
+  <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
   {{end}}
-  </body>
+</body>
 </html>

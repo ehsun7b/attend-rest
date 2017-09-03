@@ -1,21 +1,39 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
+{{template "nav.html" .}}
+<div class="jumbotron" data-ng-controller="HomeCtrl">
+    <br/>
+    <div class="container">
+      <h1 class="display-3">Attend</h1>
+      <p>helps you to manage the attentance and attendees</p>
+      <p><a class="btn btn-primary btn-lg" href="howitworks" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
 
-<header class="jumbotron" style="background-color:#A9F16C">
   <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
-    </div>
-  </div>
-</header>
+      <div class="row">
+          <div class="span6">
+            {{template "flash.html" .}}
+          </div>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Sports Event</h2>
+          <p>Plan a casual sports event with your friend, set the time and venu and share the link with your friends in social media. e.g. <b>Playing badminton, futsal or ...</b></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Create Sports Event</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Hangout with Friends</h2>
+          <p>Plan a friendly hangout with friends and share the link with them to know who will attend. You can choose a bar, or restaurant as the venue.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Create Hangout Event</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Business Meeting</h2>
+          <p>Set a business meeting with a client or colleague and share the link with them to make sure they will attend. You do not have to choose a venue.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Create Business Meeting</a></p>
+        </div>
+      </div>
 
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
-    </div>
-  </div>
-</div>
-
+      <hr>
 {{template "footer.html" .}}

@@ -1,3 +1,6 @@
 test-results/
 tmp/
 routes/
+log/attend-rest.log
+.DS_Store
+attend-rest-request.log
